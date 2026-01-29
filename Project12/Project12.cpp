@@ -93,6 +93,26 @@ int main()
 	printf("\n합계: %d\n", tot);
 	printf("평균: %.2f\n", (float)tot / num);
 
+
+	short numbers[] = { 9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9 };
+	int index = sizeof(numbers) / sizeof(short);
+	printf("numbers의 아이템 개수: %d개", sizeof(numbers) / sizeof(short));
+	numbers[index-1] = 100;
+	printf("\nnumbers배열의 가장 마지막 아이템: numbers[%d]=%d\n", index-1, numbers[index-1]);
+
+	//for문을 이용하여 numbers배열에 1~개수까지의 수를 각 아이템에 순서대로 대입하세요.
+	for (int i = 0; i < index; i++)
+	{
+		numbers[i] = i+1;
+	}
+
+	for (int i = 0; i < index; i++)
+	{
+		printf("\n%d",numbers[i]);
+	}
+
+
+
 	return 0;
 
 }
