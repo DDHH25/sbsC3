@@ -27,6 +27,7 @@ int main() {
 
 	printf("%s\n", sz);
 
+
 	//배열의 크기는 문자열의 길이와 같은가?    
 
 	int slen = strlen(sz); //문자열(String)
@@ -46,13 +47,55 @@ int main() {
 	char name[20];//알파벳 9글자까지 입력가능
 	printf("이름 입력: ");
 	//scanf()믐 공백문자를 입력받을 수 없음
-	scanf("%s", name); //문자열을 입력 받을때는 주소연산자를 붙히지않는다.
-	printf("%s\n", name);
+//	scanf("%s", name); //문자열을 입력 받을때는 주소연산자를 붙히지않는다.
+//printf("%s\n", name);
 
 //	fgets(받을배열, 최대길이, stdin);
 	//표준입력장치로부터 문자열을 입력받아 name에 대입한다.
-//	fgets(name, 20, stdin);
-	//printf("%s\n", name);
+	fgets(name, 20, stdin);
+	//Tom Cruze \n\n
+	 len = strlen(name); //입력받은 문자열의 길이
+	name[len - 1] = 0; // \n제거
+	printf("%s\n", name); 
+	//배열 문자열대입:
+	//문자열 길이: strlen
+	//문자열비교: strcmp
+	//문자열대입: 
+	printf("name: %s\n", name);
+	printf("sz: %s\n", sz); //Hello
+	strcpy(sz, "ABCDE"); //sz에 "ABCDE"를 대입 시도
+	printf("sz: %s\n", sz); //ABCDE
+
+//	strcpy(sz, "ABCDEF"); //sz에 "ABCDEF"를 대입 시도
+	//sz의 공간이 6byte인데 7byte의 값을 대입시도하면서 
+	// overflow runtime error 발생
+//	printf("sz: %s\n", sz); //ABCDE
+	
+	//문자열 추가
+	// s='abc'
+	// s=s+'def'
+	//s=='abcdef'
+	//name[20]: 알파벳 19글자까지를 저장할 수 있다.
+
+	strcat(name, "plus string"); //name=name+"plus string"
+	printf("name: %s\n", name);
+
+
+
+	//syntax error(compile error)
+	//runtime error <---debugging
+	//logical error 
+
+
+	/*
+	* 입력 데이터: "Tom Cruze\n"
+	scanf: "Tom"
+	fgets: "Tom Cruze\n"
+
+	
+
+
+	*/
 
 	return 0;
 }
