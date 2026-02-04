@@ -2,7 +2,7 @@
 
 //콘솔 입출력 함수가 정의된 헤더 파일
 //윈도우즈 OS에서만 사용가능(MSC컴파일러에서만 지원)
-#include<conio.h>
+// #include<conio.h>
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
         printf("i=%d\n", i + 1);
         i++;
     }
-    //I=5
+    //i=5
 
     i = 0;
     while (i++ < 15)  printf("=");
@@ -57,15 +57,17 @@ int main()
         printf("2 x %d= %d\n", i, i * 2);
         i++;
     }
+    /*
     int ch = 0;
     while (ch!='x')
     {
         printf("\n종료하려면 'x를 입력하세요: ");
         //_getch();
-         ch = _getch(); //conio,h이 포함되어 있어야함
+       //  ch = _getch(); //conio,h이 포함되어 있어야함
         printf("%c", ch);
 
     }
+        */
     //1부터 100까지의합을 구하세요
     i = 1;
     total = 0;
@@ -114,16 +116,14 @@ int main()
 
     //1~99까지 테이블 모양으로 출력하기
     i = 1;
- int tate = 0;
+ 
     while (i < 100)
     {
         printf("%d\t", i);
         i++;
-        tate++;
-        if (tate == 10)
+        if (i%10==0)
         {
             printf("\n");
-            tate = 0;
         }
 
     }

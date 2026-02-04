@@ -25,14 +25,14 @@ int main() {
 	printf("%s\n", sz);
 	//sz[1] = 'E';
 
-	printf("%s\n", sz);
+	printf("%s\n", sz2);
 
 
 	//배열의 크기는 문자열의 길이와 같은가?    
 
-	int slen = strlen(sz); //문자열(String)
+	int slen = strlen(sz2); //문자열(String)
 	//문자열 비교하기
-	printf("sz의 문자열의 길이: %d", slen);
+	printf("sz2의 문자열의 길이: %d", slen);
 	if (sz == sz2)
 		printf("sz와 sz2는 서로 같음\n");
 	else

@@ -101,17 +101,15 @@ int main()
 	printf("\nnumbers배열의 가장 마지막 아이템: numbers[%d]=%d\n", index-1, numbers[index-1]);
 
 	//for문을 이용하여 numbers배열에 1~개수까지의 수를 각 아이템에 순서대로 대입하세요.
-	for (int i = 0; i < index; i++)
+	for (int i = 0; i < index; numbers[i++]=i+1)
 	{
-		numbers[i] = i+1;
+			
 	}
 
 	for (int i = 0; i < index; i++)
 	{
 		printf("\n%d",numbers[i]);
 	}
-
-
 
 	return 0;
 

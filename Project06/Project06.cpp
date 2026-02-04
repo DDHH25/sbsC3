@@ -96,7 +96,7 @@ int main()
     //입력받은 초를 계산하여 다음과 같이 출력하세요.
     // 초
     //hh 시간 mm분 ss초
-  /*  int s;
+    int s;
     scanf("%d", &s);
     if (s < 60)
     {
@@ -109,14 +109,14 @@ int main()
     else
     {
         printf("%d시간 %d분 %d초", s / 3600, (s % 3600)/60,s%60);
-    }*/
+    }
     
-    int se=125;
+    /*int se=3777;
     int mm = se / 60;
     int ss = se % 60;
     int hh = mm / 60;
     mm %= 60;
-    printf("%d초는 %d시간 %d분 %d초", se, hh, mm, ss);
+    printf("%d초는 %d시간 %d분 %d초", se, hh, mm, ss); */
 
 
 

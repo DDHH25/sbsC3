@@ -17,7 +17,7 @@ void print_int(int number)
 //함수명(매개변수)
 //매개변수: parameter, argument, 인수, 인자
 //정의하기에 따라서 필요시 지정할수도 있고 안할수도 있다.
-int add(int number1, int number2)
+int add(float number1, float number2)
 {
 	//return:호출부에 결과를 반환하면서 이 함수를 즉시 종료시킴
 	return(number1 + number2); 
@@ -39,7 +39,7 @@ int main()
 	print_int(3);
 	show_menu();
 	int a = add(10, 5);
-
+	printf("\n%d\n",a);
 
 	return 0;
 }
